@@ -30,6 +30,6 @@ async def stats(client, message):
 **Total Users** : {users}
 **Premium Users** : {len(premium)}
 
-**__Powered by safe_repo__**
+**__Powered by Sonic kuwal update__**
 """)
   
