@@ -75,11 +75,11 @@ async def get_msg(userbot, sender, edit_id, msg_link, i, message):
                     await edit.delete()
                     return
             
-            edit = await app.edit_message_text(sender, edit_id, "Trying to Download...")
+            edit = await app.edit_message_text(sender, edit_id, "Trying to Download...<a href=https://t.me/Sonickuwalupdate>JOIN UPDATED CHANNEL</a>")
             file = await userbot.download_media(
                 msg,
                 progress=progress_bar,
-                progress_args=("**__Downloading: __**\n",edit,time.time()))
+                progress_args=("**__Downloading: <a href=https://t.me/Sonickuwalupdate>JOIN UPDATED CHANNEL</a> __**\n",edit,time.time()))
             
             custom_rename_tag = get_user_rename_preference(chatx)
             last_dot_index = str(file).rfind('.')
@@ -161,7 +161,7 @@ async def get_msg(userbot, sender, edit_id, msg_link, i, message):
                         thumb=thumb_path,
                         progress=progress_bar,
                         progress_args=(
-                        '**__Uploading...__**\n',
+                        '**__Uploading... <a href=https://t.me/Sonickuwalupdate>JOIN UPDATED CHANNEL</a> __**\n',
                         edit,
                         time.time()
                         )
@@ -232,7 +232,7 @@ async def get_msg(userbot, sender, edit_id, msg_link, i, message):
                         thumb=thumb_path,
                         progress=progress_bar,
                         progress_args=(
-                        '**`Uploading...`**\n',
+                        '**`Uploading... <a href=https://t.me/Sonickuwalupdate>JOIN UPDATED CHANNEL</a> `**\n',
                         edit,
                         time.time()
                         )
